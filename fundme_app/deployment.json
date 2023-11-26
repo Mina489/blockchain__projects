@@ -1,0 +1,25 @@
+{
+  "contracts": {
+    "addresss": [
+      1,
+      2,
+      3,
+      6
+    ],
+    "abi": [
+      "event Accountcreated(address[] owners, uint256 indexed id, uint256 timestamp)",
+      "event Deposit(address indexed user, uint256 indexed accountid, uint256 value, uint256 timestamp)",
+      "event Withdraw(uint256 indexed withdrawid, uint256 timestamp)",
+      "event Withdrawrequested(address indexed user, uint256 indexed accountid, uint256 indexed withdrawid, uint256 amount, uint256 timestamp)",
+      "function approvewithdrawal(uint256 accountid, uint256 withdrawid)",
+      "function createAccount(address[] otherOwners)",
+      "function deposit(uint256 accountid) payable",
+      "function getApprovals(uint256 accountid, uint256 withdrawid) view returns (uint256)",
+      "function getBalance(uint256 accountid) view returns (uint256)",
+      "function getaccounts() view returns (uint256[])",
+      "function getowners(uint256 accountid) view returns (address[])",
+      "function requestwithdrawl(uint256 accountid, uint256 amount)",
+      "function withdraw(uint256 accountid, uint256 withdrawid)"
+    ]
+  }
+}
